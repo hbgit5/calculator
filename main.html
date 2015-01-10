@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Purple Calculator</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <script src="calculator.js"></script>
+    <section class="main-container">
+    <input type="text" name="Equation" id="equation" placeholder="Equation">
+    <input type="text" name="result" id="result" placeholder="Result">
+    
+<form class="caculator-numbers-1">
+    <button type="button" value="1" onclick="AddDigit(1)">1</button>
+    <button type="button" value="2" onclick="AddDigit(2)">2</button>
+    <button type="button" value="3" onclick="AddDigit(3)">3</button>
+    <button type="button" value="+" onclick="doOp('+')">+</button>
+    </form>
+    <form class="caculator-numbers-2">
+    <button type="button" value="4" onclick="AddDigit(4)">4</button>
+    <button type="button" value="5" onclick="AddDigit(5)">5</button>
+    <button type="button" value="6" onclick="AddDigit(6)">6</button>
+    <button type="button" value="-" onclick="doOp('-')">-</button>
+    </form>
+    <form class="caculator-numbers-3">
+    <button type="button" value="7" onclick="AddDigit(7)">7</button>
+    <button type="button" value="8" onclick="AddDigit(8)">8</button>
+    <button type="button" value="9" onclick="AddDigit(9)">9</button>
+    <button type="button" value="/" onclick="doOp('/')">/</button>
+    </form>
+        <form class="caculator-zero">
+    <button type="button" value="0" onclick="AddDigit(0)">0</button>
+    <button type="button" value="*" onclick="doOp('*')">*</button>
+        </form>
+      
+<form class="caculator-answer">
+    <button type="button" value="=" onclick="calculate('=')">=</button>
+    <button type="button" value="C" onclick="clearDisplay()">C</button>
+   
+    </form>
+            
+    </section>
+    
+    
+</body>
+</html>
